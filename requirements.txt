@@ -1,0 +1,13 @@
+# ECG Robustness Benchmark — Phase 1+
+wfdb>=4.0
+neurokit2>=0.2
+torch>=2.0
+torchvision
+scikit-learn>=1.0
+matplotlib
+seaborn
+pandas
+numpy
+streamlit
+plotly
+tqdm

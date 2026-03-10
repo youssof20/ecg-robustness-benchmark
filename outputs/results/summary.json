@@ -1,0 +1,25 @@
+{
+  "clean_performance": {
+    "SimpleCNN": {
+      "macro_f1": 0.3433,
+      "accuracy": 0.5096,
+      "params": 81157
+    },
+    "ResNet1D": {
+      "macro_f1": 0.3251,
+      "accuracy": 0.4425,
+      "params": 1882501
+    },
+    "LightweightNet": {
+      "macro_f1": 0.3950,
+      "accuracy": 0.5873,
+      "params": 8429
+    }
+  },
+  "key_finding": "LightweightNet achieves the highest clean F1 and best noise robustness with 223x fewer parameters than ResNet1D",
+  "noise_types_tested": ["baseline_wander", "muscle_artifact", "electrode_motion"],
+  "snr_levels_db": [24, 18, 12, 6, 0, -6],
+  "dataset": "MIT-BIH Arrhythmia Database + MIT-BIH Noise Stress Test Database",
+  "total_beats": 109448,
+  "test_beats": 16225
+}

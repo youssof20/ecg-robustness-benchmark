@@ -1,0 +1,58 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+env/
+
+# IDE / editor
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Project: data (too large for GitHub — download from PhysioNet, see README)
+data/
+
+# Project: model checkpoints (too large — reproduce with src/train.py)
+outputs/models/*
+!outputs/models/.gitkeep
+
+# Project: large numpy arrays (reproduce with src/data_pipeline.py and src/noise_mixer.py)
+outputs/results/*.npy
+
+# Project: keep figures and small result files in git
+outputs/figures/*
+!outputs/figures/.gitkeep
+!outputs/figures/*.png
+
+# Logs and local config
+*.log
+.env
+.env.local
